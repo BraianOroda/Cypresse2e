@@ -21,4 +21,10 @@ describe('Locators en Cypress', () => {
         cy.get('input').last().click();
     });
 
+    it('FILTER Method', () => {
+        cy.get('input').filter('[type="text"]').type(username);
+        cy.get('input').filter('[type="password"]').type(password);
+        cy.get('input').filter('[type="submit"]').click();
+    });
+
 });
