@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Loguearse en la pagina SauceDemo",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expected": "Products"
+    },
+
+    {
+        "name": "Loguearse con un usuario bloqueado en la pagina SauceDemo",
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "expected": "Epic sadface: Sorry, this user has been locked out."
+    },
+
+    {
+        "name": "Loguearse con un usuario incorrecto en la pagina SauceDemo",
+        "username": "dummyUser",
+        "password": "secret_sauce",
+        "expected": "Epic sadface: Username and password do not match any user in this service"
+    },
+
+    {
+        "name": "Loguearse con un contraseña incorrecta en la pagina SauceDemo",
+        "username": "standard_user",
+        "password": "dummyPassword",
+        "expected": "Epic sadface: Username and password do not match any user in this service"
+    }
+]
