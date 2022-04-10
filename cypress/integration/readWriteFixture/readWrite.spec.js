@@ -9,16 +9,15 @@ describe('Write/Read Fixture Demo', () => {
             cy.writeFile(filePath, response.body)
         });
     });
+    it.only('Escribir en un archivo la respuesta de una API a un JSON', () => {
+        cy.request('http://localhost:3000/todos')
+        .its('body')
+        .each( objeto => {
+            cy.readFile(filePath).then(array => {
+                array.push(objeto)
 
-    // it('Escribir en un archivo la respuesta de una API a un JSON', () => {
-    //     cy.request('http://localhost:3000/todos')
-    //     .its('body')
-    //     .each( objeto => {
-    //         cy.readFile(filePath).then(array => {
-    //             array.push(objeto)
-
-    //             cy.writeFile(filePath, array)
-    //         })
-    //     });
-    // });
+                cy.writeFile(filePath, array)
+            })
+        });
+    });
 });

@@ -4,9 +4,9 @@ const endpoint = 'http://localhost:3000/todos';
 
 // bjeto a validar en el request
 const todoObj = {
-    "title": "NewTodoObjectFromPost",
+    "title": "nuevo objeto",
     "completed": false,
-    "id": 4
+    "id": 6
 }
 
 // datos enviados al endpoint => todoObj
