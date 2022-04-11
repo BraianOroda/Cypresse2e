@@ -10,7 +10,7 @@ describe('Write/Read Fixture Demo', () => {
         });
     });
     it.only('Escribir en un archivo la respuesta de una API a un JSON', () => {
-        cy.request('http://localhost:3000/todos')
+        cy.request('GET', 'http://localhost:3000/todos')
         .its('body')
         .each( objeto => {
             cy.readFile(filePath).then(array => {
