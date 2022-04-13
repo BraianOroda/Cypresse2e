@@ -1,0 +1,40 @@
+{
+    "auth": {
+        "username": "braianoroda_1bYuKB",
+        "access_key": "qTieGKXzDsbM7Z8ZKz7F"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest",
+                "latest-1"
+            ]
+        },
+        {
+            "browser": "edge",
+            "os": "OS X Catalina",
+            "versions": [ "latest" ]
+        }
+    ],
+    "run_settings": {
+        "cypress_config_file": "cypress.json",
+        "project_name": "project-name",
+        "build_name": "build-name",
+        "exclude": [],
+        "parallels": "3",
+        "npm_dependencies": { 
+            "cypress-mochawesome-reporter": "^3.0.1"
+        },
+        "package_config_options": {},
+        "headless": true
+    },
+    "connection_settings": {
+        "local": false,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    },
+    "disable_usage_reporting": false
+}

@@ -7,7 +7,9 @@
     "test": "test",
     "cypress:open": "cypress open",
     "cypress:runRetry": "cypress run --spec cypress/integration/sample.spec.js",
-    "cypress:runChrome": "cypress run --browser chrome --spec cypress/integration/POM/*.spec.js"
+    "cypress:runChrome": "cypress run --browser chrome --spec cypress/integration/POM/*.spec.js",
+    "cypress:browserStack": "browserstack-cypress run --sync --spec cypress/integration/POM/*.spec.js",
+    "cypress:testVarios": "browserstack-cypress run --sync --spec cypress/integration/TestVarios/*.spec.js"
   },
   "keywords": [],
   "author": "",
